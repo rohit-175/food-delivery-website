@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 2;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logoz{
+    margin: 3px 2px;
+    height: 60px;
+    width: 70px;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+#navbar ul{
+    margin: 15px 15px;
+    display: flex;
+    text-decoration: none;
+}
+#navbar ul li{
+    list-style: none;
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+}
+#navbar ul li a:hover{
+    background-color: rgb(227, 175, 175);
+    color: black;
+    border-radius: 30px;
+}
+
+/*home*/
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 46vh;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: flex-end;
+}
+
+#home::before{
+    content: "";
+    background: url(../background/bg2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10vh;
+    text-shadow: 4px 4px 5px rgb(38, 4, 4);
+    
+}
+.button{
+    margin: 50px 30px;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 150px;
+    height: 7vh;
+}
+.button:hover{
+    background-color: rgb(227, 175, 175);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#home p{
+    margin-top:6px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 3.5vh;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+#services-section{
+    display: flex;
+    margin: 50px;
+    justify-content:center;
+    align-items: center;
+}
+#services-section img{
+    height: 140px;
+    width: 160px;
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+#services-section .box{
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: rgb(248, 235, 235);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    margin: 3px;
+    padding: 20px;
+}
+.hprimary{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8vh;
+    top: 5vh;
+    position: relative;
+}
+.h2secondary{
+    font-size: 5vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 5px;
+}
+div p{
+    font-size: 2.8vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+footer{
+    display: flex;
+    position: relative;
+    top: 8vh;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+/*clients section*/
+
+#clients-section{
+    height: 35vh;
+    position: relative;
+}
+
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url(../background/bg4.jpg) center center/cover;
+    opacity: 0.7;
+    z-index: -2;
+    width: 100%;
+    height: 123%;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img{
+    margin: 10vh 5vh;
+    height: 20vh;
+}
+.hprimary2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8vh;
+    top: 13vh;
+    position: relative;
+
+}
+#contact{
+    position: relative;
+    height: 98vh;
+}
+#contact::before{
+    top: 8vh;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(../background/bg5.jpg) no-repeat center center/cover;
+    opacity: 0.7;
+}
+.formgrp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 18vh;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4vh;
+}
+#contactbox textarea,
+#contactbox input{
+    width: 100%;
+    margin: .5vh;
+    border-radius: 10px;
+    font-size: 2.5vh;
+    padding: 3vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#contactbox label{
+    width: 50%;
+}
+.btn{
+    size: 10px;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 22vh;
+    left: 26vh;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
